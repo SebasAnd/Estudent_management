@@ -28,11 +28,23 @@ const getRecord = (request, response) =>{
     response.status(200).json(results.rows)
   })
 }
+const getAsignature = (request, response) =>{
+  const alumnoid = parseInt(request.params.id)
+  // console.log(asignaturaid)
+  pool.query('SELECT * FROM registerschema."Asignatura"  WHERE id = $1',[alumnoid], (error, results) => {
+    if (error) {
+      throw error
+    }
+    
+    response.status(200).json(results.rows)
+  })
+}
 
 
 
 
 module.exports = {
   getAlumns,
-  getRecord
+  getRecord,
+  getAsignature
 }
