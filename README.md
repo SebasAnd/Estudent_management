@@ -1,11 +1,8 @@
 # Student_management
 # Installation
-basic installation 
-$ npm install 
-express
-$ npm install express --save
-pg
-npm install pg
+1. basic installation $ npm install 
+2. express $ npm install express --save
+3. pg $npm install pg
 
 # Run the application 
 
