@@ -13,7 +13,7 @@ $ node index.js
 
 the resources will be in localhost:3000, the routes acepted are 
 
--http://localhost:3000/Alumns/:id = asignature id
--http://localhost:3000/Record/:id = alumn id
+- http://localhost:3000/Alumns/:id = asignature id
+- http://localhost:3000/Record/:id = alumn id
 
 
